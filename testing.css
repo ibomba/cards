@@ -24,12 +24,16 @@ body {
   }
 
   .nft-container > .nft:nth-child(1){
-    border: 1px solid rgba(255, 255, 255, 0.1333333333);
-    background-color: #282c34;
     background: linear-gradient(0deg, 
     rgb(131, 131, 131) 0%, 
     rgba(143, 143, 143, 0.5) 100%);
     box-shadow: 0 2px 15px 7px rgba(255, 255, 255, 0.533);
+  }
+  .nft-container > .nft:nth-child(2) {
+    background: linear-gradient(0deg, 
+    rgb(154, 27, 27) 0%, 
+    rgba(100, 20, 20, 0.5) 100%);
+    box-shadow: 0 2px 10px 7px rgba(255, 36, 36, 0.4);
   }
   
   
@@ -37,12 +41,11 @@ body {
     display: inline-block; /* or display: inline-flex; */
     user-select: none;
     max-width: 200px;
-    /* margin: 5rem auto;
-    margin-top: 70px;
-    margin-bottom: -10px;
-    border-radius: 0.7rem; */
+    border-radius: 0.7rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.1333333333);
+    background-color: #282c34;
     overflow: hidden;
     transition: 0.5s all;
   }
@@ -52,32 +55,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    padding: 1rem;
+    width: 100%;
   }
 
   .tokenImage {
+    padding-top: 1rem;
     border-radius: 0.6rem;
-    max-width: 94%;
+    max-width: 90%;
     height: 140px;
     object-fit: cover;
   }
-  
-  .nft hr {
-    width: 100%;
-    border: none;
-    /* border-bottom: 1px solid rgba(136, 136, 136, 0.3333333333); */
-    border-bottom: 2px solid rgba(20, 200, 20);
-    margin: 0, 2rem;
-  }
-  .nft ins {
-    text-decoration: none;
-  }
-  
+
+  /* .nft h2 {
+    align-items: left;
+    justify-content: left;
+  } */
   
   .description {
-    margin: 0.4rem 0;
-    margin-top: -5px;
+    margin: 0;
+    padding-left: .8rem;
+    padding-right: .8rem;
     color: #a89ec9;
   }
 
@@ -85,10 +82,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: .5rem;
+    margin-bottom: -1rem;
   }
 
   .price {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color: #ee83e5;
     font-weight: 700;
@@ -97,6 +96,7 @@ body {
   .price ins {
     margin-left: 0.1rem;
     margin-right: 0.6rem;
+    text-decoration: none;
   }
   .rank {
     display: flex;
@@ -110,15 +110,22 @@ body {
     margin: 0.5rem;
     margin-bottom: 0.68rem;
     font-size: 130%;
+    text-decoration: none;
   }
   .creator {
     display: flex;
     align-items: center;
-    margin-bottom: -0.6rem;
   }
   .creator ins {
     color: #a89ec9;
     text-decoration: none;
+  }
+
+  .nft hr {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.3333333333);
+    margin: 0;
   }
   
   .nft ::before {
