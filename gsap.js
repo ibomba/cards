@@ -1,20 +1,20 @@
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline({
     scrollTrigger: {
-        trigger: '.main-logo',
-        start: '30%',
-        end: '70%',
+        trigger: '.animated-element',
+        start: 'top center',
+        end: 'bottom center',
         scrub: 'true',
-        markers: 'true',
+        // markers: 'true',
     }
 })
 
-tl.to('.nav-logo', {
-    y: 100
+tl.to('.animated-element', {
+    x: 800
 })
+
 
 
 
