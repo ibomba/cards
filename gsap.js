@@ -4,15 +4,17 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.animated-element',
-        start: 'top center',
-        end: 'bottom center',
+        start: '-50% center',
+        end: '200% center',
         scrub: 'true',
-        // markers: 'true',
+        markers: 'true',
+        toggleActions: ''
     }
 })
 
 tl.to('.animated-element', {
-    x: 800
+    x: 800,
+    duration: 5
 })
 
 

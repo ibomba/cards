@@ -21,6 +21,7 @@ nav {
   background-color: rgb(22, 20, 24);
   padding: 5px;
   position: fixed;
+
   top: 0px;
   left: 0px;
   height: 7vh;
@@ -30,6 +31,11 @@ nav {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 1);
   /* border-width: 90%; */
+}
+
+.logo-icon {
+  padding-right: 1rem;
+  font-size: 2.5rem;
 }
 
 .nav div {
@@ -87,6 +93,7 @@ body:has(.dropdown.active) .nav div {
   margin-right: 1rem;
   font-size: 2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 /* HERO */
